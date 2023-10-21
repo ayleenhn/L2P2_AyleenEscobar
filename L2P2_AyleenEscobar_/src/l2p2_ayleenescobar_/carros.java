@@ -12,16 +12,17 @@ public class carros {
     private String modelo;
     private double precio;
     public Color color;
-    private boolean marcador;
-    private ArrayList<String> mejoras= new ArrayList();
+    private String mejoras;
+    //private ArrayList<String> mejoras= new ArrayList();
     
     //constructores
     
-    public carros (String marca,String modelo, double precio, Color color, boolean marcador){
+    public carros (String marca,String modelo, double precio, Color color,String mejoras){
         this.marca=marca;
         this.modelo=modelo;
         precio=6000;
         this.color=color;
+        this.mejoras=mejoras;
     }
     
     //mutadores
@@ -55,18 +56,11 @@ public class carros {
         return color;
     }
     
-    public void setmarcador(boolean marcador){
+    
+    public void setmejoras(String m){
     }
     
-    public boolean getmarcador(){
-        return marcador;
-    }
-    
-    public void setmejoras(ArrayList<String> m){
-        mejoras=m;
-    }
-    
-    public ArrayList<String> getmejoras(){
+    public String getmejoras(){
         return mejoras;
     }
 }

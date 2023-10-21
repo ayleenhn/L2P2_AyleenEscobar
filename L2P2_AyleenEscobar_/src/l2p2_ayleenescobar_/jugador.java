@@ -14,11 +14,10 @@ public class jugador {
     private double dinero;
     
     //constructores
-    public jugador(String nombre, int cantidad_carros, int puntos,double dinero){
-        this.cantidad_carros=cantidad_carros;
+    public jugador(String nombre, int puntos,double dinero){
         this.nombre=nombre;
-        puntos=2000;
-        dinero=10000;
+        puntos=100;
+        dinero=100;
     }
     
     //mutadores
